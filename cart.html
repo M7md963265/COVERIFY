@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cart | COVERIFY</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+<div class="logo">COVERIFY</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="shop.html">Shop</a>
+
+<a href="cart.html">
+🛒 <span id="cart-count">0</span>
+</a>
+
+</nav>
+
+</header>
+
+<section class="featured">
+
+<h2>Your Cart</h2>
+
+<div id="cart-items"></div>
+
+<h2 id="total"></h2>
+
+<button class="btn" id="checkoutBtn">
+
+Place Order on WhatsApp
+
+</button>
+
+<script>
+
+document.getElementById("checkoutBtn").onclick=function(){
+
+let cart=JSON.parse(localStorage.getItem("cart"))||[];
+
+if(cart.length===0){
+
+alert("Your cart is empty.");
+
+return;
+
+}
+
+let total=0;
+
+let message="Hello COVERIFY!%0A%0AI'd like to order:%0A%0A";
+
+cart.forEach(item=>{
+
+message+=`${item.name}%0A`;
+
+message+=`Model: ${item.model}%0A`;
+
+message+=`Quantity: ${item.quantity}%0A`;
+
+message+=`Price: ${item.price*item.quantity} QAR%0A%0A`;
+
+total+=item.price*item.quantity;
+
+});
+
+message+="Total: "+total+" QAR";
+
+window.open("https://wa.me/97430122006?text="+message);
+
+}
+
+</script>
+
+</section>
+
+<script src="products.js"></script>
+<script src="cart.js"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>
