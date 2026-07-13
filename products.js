@@ -145,7 +145,17 @@ const products = {
         image: "images/airpods-pro2.jpg",
         description: "High-quality wireless earbuds with noise cancellation, transparency mode, spatial audio, instant pairing and wireless charging.",
         featured: true
-    }
+    },
+
+    "airpods-4": {
+    id: "airpods-4",
+    name: "AirPods 4",
+    category: "Accessories",
+    price: 99,
+    image: "images/airpods4.jpg",
+    description: "Premium wireless earbuds with crystal-clear sound, instant pairing, touch controls, long battery life, and seamless compatibility with Apple devices.",
+    featured: true
+}
 
 };
 
