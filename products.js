@@ -155,6 +155,18 @@ const products = {
     image: "images/airpods4.jpg",
     description: "Premium wireless earbuds with crystal-clear sound, instant pairing, touch controls, long battery life, and seamless compatibility with Apple devices.",
     featured: true
+},
+"techwoven-black": {
+    id: "techwoven-black",
+    name: "TechWoven Black",
+    category: "Premium Cases",
+    price: 50,
+    image: "images/techwoven-black.jpg",
+    description: "Upgrade your iPhone with the TechWoven Black case, designed for those who appreciate premium craftsmanship and timeless style. Made from high-quality woven fabric with a durable soft TPU frame, it offers a luxurious texture, a secure anti-slip grip, and dependable everyday protection. The elegant matte black finish pairs perfectly with the iPhone 17 Pro Max, while the reinforced camera bezel and slim profile provide both style and durability. MagSafe compatible and precision-engineered for a perfect fit.",
+    featured: true,
+    models: [
+        "iPhone 17 Pro Max"
+    ]
 }
 
 };
@@ -211,21 +223,51 @@ if (document.getElementById("products")) {
 
     const container = document.getElementById("products");
 
-    container.innerHTML = "";
+    function displayProducts(category = "All") {
 
-    Object.values(products).forEach(product => {
+        container.innerHTML = "";
 
-        container.innerHTML += `
-        <div class="card">
-            <img src="${product.image}" alt="${product.name}">
-            <h3>${product.name}</h3>
-            <p>${product.price} QAR</p>
+        Object.values(products).forEach(product => {
 
-            <a href="product.html?id=${product.id}" class="card-btn">
-                View Product
-            </a>
-        </div>
-        `;
+            if (category === "All" || product.category === category) {
+
+                container.innerHTML += `
+                <div class="card">
+
+                    <img src="${product.image}" alt="${product.name}">
+
+                    <h3>${product.name}</h3>
+
+                    <p>${product.price} QAR</p>
+
+                    <a href="product.html?id=${product.id}" class="card-btn">
+                        View Product
+                    </a>
+
+                </div>
+                `;
+
+            }
+
+        });
+
+    }
+
+    displayProducts();
+
+    document.querySelectorAll(".filter-btn").forEach(button => {
+
+        button.addEventListener("click", () => {
+
+            document.querySelectorAll(".filter-btn").forEach(btn =>
+                btn.classList.remove("active")
+            );
+
+            button.classList.add("active");
+
+            displayProducts(button.textContent.trim());
+
+        });
 
     });
 
