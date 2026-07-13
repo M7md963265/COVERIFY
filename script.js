@@ -30,6 +30,12 @@ if (document.getElementById("product-name")) {
 
     // Phone Models
     const select = document.getElementById("phone-model");
+
+if (product.models) {
+
+    select.style.display = "block";
+    select.previousElementSibling.style.display = "block";
+
     select.innerHTML = "";
 
     product.models.forEach(model => {
@@ -43,16 +49,26 @@ if (document.getElementById("product-name")) {
 
     });
 
-    // Add To Cart
-    document.getElementById("addCart").onclick = function () {
+} else {
 
-        addToCart(
-            product.id,
-            select.value,
-            quantity
-        );
+    // Hide phone model label and dropdown for accessories
+    select.style.display = "none";
+    select.previousElementSibling.style.display = "none";
 
-    };
+}
+
+// Add To Cart
+document.getElementById("addCart").onclick = function () {
+
+    const model = product.models ? select.value : "Accessory";
+
+    addToCart(
+        product.id,
+        model,
+        quantity
+    );
+
+};
 
 }
 // ==============================
