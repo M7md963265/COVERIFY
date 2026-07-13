@@ -151,9 +151,16 @@ const products = {
         "iPhone 14 Pro Max",
         "iPhone 14 Pro"
     ]
-}
-
-};
+},
+"airpods-pro2": {
+    id: "airpods-pro2",
+    name: "AirPods Pro 2",
+    category: "Accessories",
+    price: 89,
+    image: "images/airpods-pro2.jpg",
+    description: "High-quality AirPods Pro 2 with active noise cancellation, Transparency Mode, spatial audio, wireless charging case, instant pairing with iPhone, and excellent battery life.",
+    featured: true
+},
 
 const params = new URLSearchParams(window.location.search);
 
@@ -171,13 +178,32 @@ if (document.getElementById("product-name")) {
     document.getElementById("product-price").textContent = product.price + " QAR";
     document.getElementById("product-description").textContent = product.description;
 
-    const select = document.getElementById("phone-model");
-    select.innerHTML = "";
+   const select = document.getElementById("phone-model");
 
-    product.models.forEach(model => {
-        const option = document.createElement("option");
-        option.value = model;
-        option.textContent = model;
-        select.appendChild(option);
-    });
+if (select) {
+
+    if (product.models) {
+
+        select.style.display = "block";
+        select.innerHTML = "";
+
+        product.models.forEach(model => {
+
+            const option = document.createElement("option");
+
+            option.value = model;
+            option.textContent = model;
+
+            select.appendChild(option);
+
+        });
+
+    } else {
+
+        // Hide phone model selector for accessories
+        select.style.display = "none";
+
+    }
+
+}
 }
