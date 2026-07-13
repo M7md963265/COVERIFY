@@ -59,31 +59,61 @@ if (document.getElementById("product-name")) {
 // SHOP PAGE
 // ==============================
 
+// ==============================
+// SHOP PAGE
+// ==============================
+
 if (document.getElementById("products")) {
 
     const container = document.getElementById("products");
 
-    container.innerHTML = "";
+    function displayProducts(category = "All") {
 
-    Object.values(products).forEach(product => {
+        container.innerHTML = "";
 
-        container.innerHTML += `
+        Object.values(products).forEach(product => {
 
-        <div class="card">
+            if (category === "All" || product.category === category) {
 
-            <img src="${product.image}" alt="${product.name}">
+                container.innerHTML += `
 
-            <h3>${product.name}</h3>
+                <div class="card">
 
-            <p>${product.price} QAR</p>
+                    <img src="${product.image}" alt="${product.name}">
 
-            <a href="product.html?id=${product.id}" class="card-btn">
-                View Product
-            </a>
+                    <h3>${product.name}</h3>
 
-        </div>
+                    <p>${product.price} QAR</p>
 
-        `;
+                    <a href="product.html?id=${product.id}" class="card-btn">
+                        View Product
+                    </a>
+
+                </div>
+
+                `;
+
+            }
+
+        });
+
+    }
+
+    displayProducts();
+
+    document.querySelectorAll(".filter-btn").forEach(button => {
+
+        button.addEventListener("click", () => {
+
+            document.querySelectorAll(".filter-btn").forEach(btn =>
+                btn.classList.remove("active")
+            );
+
+            button.classList.add("active");
+
+            displayProducts(button.textContent.trim());
+
+        });
 
     });
 
