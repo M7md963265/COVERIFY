@@ -167,6 +167,106 @@ const products = {
     models: [
         "iPhone 17 Pro Max"
     ]
+},
+"falcon-prestige": {
+    id: "falcon-prestige",
+    name: "Falcon Prestige",
+    category: "Premium Cases",
+    price: 30,
+    image: "images/falcon-prestige.jpg",
+    description: "Inspired by Qatar's iconic falcon, the Falcon Prestige case blends elegant minimalism with cultural heritage. Crafted from premium soft-touch TPU with a crystal-clear matte finish, it offers a comfortable grip, reinforced camera protection, and reliable everyday durability. Precision-engineered for a perfect fit while maintaining a slim and luxurious profile.",
+    featured: true,
+    models: [
+        "iPhone 17 Pro Max",
+        "iPhone 17 Pro",
+        "iPhone 17",
+        "iPhone 16 Pro Max",
+        "iPhone 16 Pro",
+        "iPhone 16",
+        "iPhone 15 Pro Max",
+        "iPhone 15 Pro",
+        "iPhone 15"
+    ]
+},
+"crocodile-heritage": {
+    id: "crocodile-heritage",
+    name: "Crocodile Heritage",
+    category: "Premium Cases",
+    price: 30,
+    image: "images/crocodile-heritage.jpg",
+    description: "A bold statement piece featuring an artistic crocodile illustration on a premium textured finish. Designed with shock-absorbing protection, raised camera edges, and a soft-touch feel for maximum comfort and style. Perfect for those who want a unique luxury look.",
+    featured: true,
+    models: [
+        "iPhone 17 Pro Max",
+        "iPhone 17 Pro",
+        "iPhone 17",
+        "iPhone 16 Pro Max",
+        "iPhone 16 Pro",
+        "iPhone 16",
+        "iPhone 15 Pro Max",
+        "iPhone 15 Pro",
+        "iPhone 15"
+    ]
+},
+"forest-green-suede": {
+    id: "forest-green-suede",
+    name: "Forest Green Suede",
+    category: "Premium Cases",
+    price: 30,
+    image: "images/forest-green-suede.jpg",
+    description: "Crafted with a luxurious suede-inspired finish in an elegant forest green color. The premium microfiber texture delivers exceptional grip, fingerprint resistance, and all-day comfort while reinforced corners provide dependable drop protection without adding bulk.",
+    featured: true,
+    models: [
+        "iPhone 17 Pro Max",
+        "iPhone 17 Pro",
+        "iPhone 17",
+        "iPhone 16 Pro Max",
+        "iPhone 16 Pro",
+        "iPhone 16",
+        "iPhone 15 Pro Max",
+        "iPhone 15 Pro",
+        "iPhone 15"
+    ]
+},
+"sandstone-beige": {
+    id: "sandstone-beige",
+    name: "Sandstone Beige",
+    category: "Premium Cases",
+    price: 30,
+    image: "images/sandstone-beige.jpg",
+    description: "Elegant sandstone beige with a refined suede-like finish inspired by luxury interiors. Lightweight yet durable, featuring premium shock protection, precision cutouts, and a timeless minimalist design that complements every iPhone.",
+    featured: true,
+    models: [
+        "iPhone 17 Pro Max",
+        "iPhone 17 Pro",
+        "iPhone 17",
+        "iPhone 16 Pro Max",
+        "iPhone 16 Pro",
+        "iPhone 16",
+        "iPhone 15 Pro Max",
+        "iPhone 15 Pro",
+        "iPhone 15"
+    ]
+},
+"burgundy-suede": {
+    id: "burgundy-suede",
+    name: "Burgundy Suede",
+    category: "Premium Cases",
+    price: 30,
+    image: "images/burgundy-suede.jpg",
+    description: "A sophisticated burgundy finish with a premium suede texture that delivers elegance and comfort. Designed with reinforced corners, raised camera protection, and a luxurious anti-slip grip, making it the perfect combination of style and durability.",
+    featured: true,
+   models: [
+        "iPhone 17 Pro Max",
+        "iPhone 17 Pro",
+        "iPhone 17",
+        "iPhone 16 Pro Max",
+        "iPhone 16 Pro",
+        "iPhone 16",
+        "iPhone 15 Pro Max",
+        "iPhone 15 Pro",
+        "iPhone 15"
+    ]
 }
 
 };
