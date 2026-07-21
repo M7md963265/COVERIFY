@@ -215,3 +215,19 @@
     margin-top:12px;
     text-decoration:none;
 }
+@media (max-width:768px){
+
+    .product-container{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+    .product-image img{
+        width:100%;
+    }
+
+    .purchase-box{
+        width:100%;
+    }
+
+}

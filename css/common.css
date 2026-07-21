@@ -285,3 +285,27 @@ body{
     transform:translateY(0);
 
 }
+/* ===========================
+   Mobile Navbar
+=========================== */
+
+@media (max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+        padding:20px;
+    }
+
+    .navbar nav{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:20px;
+    }
+
+    .logo{
+        font-size:2rem;
+    }
+
+}
