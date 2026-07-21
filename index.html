@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,7 +9,7 @@
 
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 </head>
 
@@ -18,31 +17,122 @@
 
 <header class="navbar">
 
-<div class="logo">COVERIFY</div>
+    <a href="index.html" class="logo">COVERIFY</a>
 
-<nav>
+    <nav>
 
-<a href="index.html">Home</a>
-<a href="shop.html">Shop</a>
-<a href="cart.html">🛒 <span id="cart-count">0</span></a>
+        <a href="index.html" class="active">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="shop.html">Premium</a>
+        <a href="cart.html" class="cart-link">
+            🛒 <span id="cart-count">0</span>
+        </a>
 
-</nav>
+    </nav>
 
 </header>
 
 <section class="hero">
 
-    <div class="hero-content">
+    <div class="hero-text">
 
-        <h1>Luxury Meets Protection ✨</h1>
+        <span class="hero-tag">
+            Luxury Collection
+        </span>
+
+        <h1>
+            Luxury Protection<br>
+            For Every iPhone
+        </h1>
 
         <p>
-            Discover premium silicone and heritage-inspired iPhone cases,
-            designed to protect your phone while expressing your style.
+
+            Discover premium iPhone cases crafted with elegance,
+            durability and precision. Designed to protect your device
+            while elevating your everyday style.
+
         </p>
 
-        <a href="shop.html" class="btn">
-            Shop Collection
+        <div class="hero-buttons">
+
+            <a href="shop.html" class="btn">
+                Shop Collection →
+            </a>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+<section class="quote">
+    <p>
+        Luxury isn't loud.<br>
+        <span>It's in the details.</span>
+    </p>
+</section>
+
+<section class="collections">
+
+    <h2>Explore Collections</h2>
+
+    <div class="collection-grid">
+
+        <a href="shop.html" class="collection-card">
+
+            <img src="images/IMG_9384.PNG">
+
+            <div>
+
+                <h3>Silicone</h3>
+
+                <p>Minimal. Soft. Everyday.</p>
+
+            </div>
+
+        </a>
+
+        <a href="shop.html" class="collection-card">
+
+            <img src="images/IMG_9403.PNG">
+
+            <div>
+
+                <h3>Heritage</h3>
+
+                <p>Inspired by Qatar.</p>
+
+            </div>
+
+        </a>
+
+        <a href="shop.html" class="collection-card">
+
+            <img src="images/falcon-prestige.jpg">
+
+            <div>
+
+                <h3>Premium</h3>
+
+                <p>Luxury craftsmanship.</p>
+
+            </div>
+
+        </a>
+
+        <a href="shop.html" class="collection-card">
+
+            <img src="images/airpods-pro2.jpg">
+
+            <div>
+
+                <h3>Accessories</h3>
+
+                <p>Complete your setup.</p>
+
+            </div>
+
         </a>
 
     </div>
@@ -51,19 +141,19 @@
 
 <section class="featured">
 
-<h2>Featured Collection</h2>
+<h2>Best Sellers</h2>
 
 <div class="products">
 
 <div class="card">
 
-<img src="images/IMG_9384.PNG">
+<img src="images/techwoven-black.jpg">
 
-<h3>White Silicone</h3>
+<h3>TechWoven Black</h3>
 
-<p>20 QAR</p>
+<p>50 QAR</p>
 
-<a href="product.html?id=white-silicone" class="card-btn">
+<a href="product.html?id=techwoven-black" class="card-btn">
 View Product
 </a>
 
@@ -71,13 +161,13 @@ View Product
 
 <div class="card">
 
-<img src="images/IMG_9403.PNG">
+<img src="images/falcon-prestige.jpg">
 
-<h3>Falcon Heritage</h3>
+<h3>Falcon Prestige</h3>
 
-<p>29 QAR</p>
+<p>30 QAR</p>
 
-<a href="product.html?id=falcon-heritage" class="card-btn">
+<a href="product.html?id=falcon-prestige" class="card-btn">
 View Product
 </a>
 
@@ -85,13 +175,13 @@ View Product
 
 <div class="card">
 
-<img src="images/IMG_9407.PNG">
+<img src="images/airpods-pro2.jpg">
 
-<h3>Camel Heritage</h3>
+<h3>AirPods Pro 2</h3>
 
-<p>29 QAR</p>
+<p>89 QAR</p>
 
-<a href="product.html?id=camel-heritage" class="card-btn">
+<a href="product.html?id=airpods-pro2" class="card-btn">
 View Product
 </a>
 
@@ -101,53 +191,57 @@ View Product
 
 </section>
 
-<section class="featured">
+<section class="benefits">
 
-<h2>Why COVERIFY?</h2>
+    <h2>Crafted to Stand Out</h2>
 
-<div class="products">
+    <p class="section-subtitle">
+        Every detail is carefully designed to combine luxury aesthetics
+        with everyday protection.
+    </p>
 
-<div class="card">
+    <div class="benefit-grid">
 
-<h3>🛡 Premium Protection</h3>
+        <div class="benefit">
+            <h3>Premium Materials</h3>
+            <p>
+                Soft-touch finishes inspired by luxury craftsmanship.
+            </p>
+        </div>
 
-<p>
-Every case is designed to protect your iPhone from everyday drops and scratches.
-</p>
+        <div class="benefit">
+            <h3>Precision Fit</h3>
+            <p>
+                Engineered specifically for your iPhone model.
+            </p>
+        </div>
 
-</div>
+        <div class="benefit">
+            <h3>Fast Delivery</h3>
+            <p>
+                Quick delivery across Qatar with secure packaging.
+            </p>
+        </div>
 
-<div class="card">
+        <div class="benefit">
+            <h3>WhatsApp Ordering</h3>
+            <p>
+                Simple, fast and personalized customer service.
+            </p>
+        </div>
 
-<h3>🚚 Fast Delivery</h3>
-
-<p>
-Quick delivery across Qatar with reliable service.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>⭐ Premium Quality</h3>
-
-<p>
-Luxury materials, elegant designs, and comfortable grip.
-</p>
-
-</div>
-
-</div>
+    </div>
 
 </section>
-
 <footer>
 
-<h3>COVERIFY</h3>
+<h2>COVERIFY</h2>
 
-<p>Luxury iPhone Cases</p>
+<p>Luxury iPhone Cases & Accessories</p>
 
-<p>© 2026 COVERIFY. All Rights Reserved.</p>
+<p>Designed with elegance. Built for protection.</p>
+
+<p>© 2026 COVERIFY. All rights reserved.</p>
 
 </footer>
 
