@@ -1,0 +1,429 @@
+/* ==========================================
+   COVERIFY V3 - HOME
+========================================== */
+
+/* HERO */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:800px;
+    height:800px;
+
+    border-radius:50%;
+
+    background:
+    radial-gradient(circle,
+    rgba(212,175,55,.12),
+    transparent 70%);
+
+    z-index:-1;
+
+}
+
+.hero-content{
+
+    max-width:850px;
+
+}
+
+.hero-tag{
+
+    display:inline-block;
+
+    margin-bottom:30px;
+
+    padding:10px 22px;
+
+    border-radius:999px;
+
+    border:1px solid rgba(212,175,55,.3);
+
+    color:var(--gold);
+
+    font-size:14px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+.hero h1{
+
+    font-size:clamp(58px,7vw,92px);
+
+    line-height:1;
+
+    font-weight:800;
+
+    margin-bottom:30px;
+
+}
+
+.hero p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    margin-bottom:45px;
+
+    font-size:20px;
+
+    color:var(--gray);
+
+    line-height:1.8;
+
+}
+
+/* COLLECTIONS */
+
+.collections{
+
+    padding-top:40px;
+
+}
+
+.collections h2{
+
+    text-align:center;
+
+    font-size:54px;
+
+    margin-bottom:70px;
+
+}
+
+.collection-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+
+    gap:30px;
+
+}
+
+.collection-card{
+
+    position:relative;
+
+    height:420px;
+
+    overflow:hidden;
+
+    border-radius:28px;
+
+    background:var(--surface);
+
+    transition:var(--transition);
+
+}
+
+.collection-card img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.6s;
+
+}
+
+.collection-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+        transparent 20%,
+        rgba(0,0,0,.9)
+    );
+
+}
+
+.collection-card div{
+
+    position:absolute;
+
+    left:28px;
+
+    bottom:28px;
+
+    z-index:2;
+
+}
+
+.collection-card h3{
+
+    font-size:32px;
+
+    margin-bottom:8px;
+
+}
+
+.collection-card p{
+
+    color:var(--gold);
+
+}
+
+.collection-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--shadow);
+
+}
+
+.collection-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* BEST SELLERS */
+
+.featured h2{
+
+    text-align:center;
+
+    font-size:52px;
+
+    margin-bottom:70px;
+
+}
+
+.products{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:35px;
+
+}
+
+.card{
+
+    background:var(--surface);
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    transition:var(--transition);
+
+    border:1px solid rgba(255,255,255,.05);
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--shadow);
+
+}
+
+.card img{
+
+    height:340px;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.card:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.card h3{
+
+    font-size:30px;
+
+    padding:25px 25px 10px;
+
+}
+
+.card p{
+
+    color:var(--gold);
+
+    font-size:26px;
+
+    font-weight:700;
+
+    padding:0 25px 25px;
+
+}
+
+.card-btn{
+
+    display:block;
+
+    margin:0 25px 25px;
+
+    text-align:center;
+
+    padding:16px;
+
+    border-radius:16px;
+
+    background:#202020;
+
+    transition:var(--transition);
+
+    font-weight:600;
+
+}
+
+.card-btn:hover{
+
+    background:var(--gold);
+
+    color:#111;
+
+}
+
+/* BENEFITS */
+
+.benefits{
+
+    text-align:center;
+
+}
+
+.benefits h2{
+
+    font-size:52px;
+
+    margin-bottom:20px;
+
+}
+
+.section-subtitle{
+
+    max-width:700px;
+
+    margin:0 auto 70px;
+
+    color:var(--gray);
+
+    line-height:1.8;
+
+}
+
+.benefit-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+.benefit{
+
+    padding:45px;
+
+    border-radius:24px;
+
+    background:var(--surface);
+
+    border:1px solid rgba(255,255,255,.05);
+
+    transition:var(--transition);
+
+}
+
+.benefit:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--gold);
+
+}
+
+.benefit-icon{
+
+    font-size:42px;
+
+    margin-bottom:20px;
+
+}
+
+.benefit h3{
+
+    margin-bottom:15px;
+
+    font-size:24px;
+
+}
+
+.benefit p{
+
+    color:var(--gray);
+
+    line-height:1.7;
+
+}
+
+/* MOBILE */
+
+@media (max-width:900px){
+
+.hero h1{
+
+    font-size:56px;
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+}
+
+.collections h2,
+.featured h2,
+.benefits h2{
+
+    font-size:38px;
+
+}
+
+}

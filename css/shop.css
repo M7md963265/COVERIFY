@@ -1,0 +1,393 @@
+/* =========================================
+   COVERIFY SHOP
+   ========================================= */
+
+.shop-hero{
+    padding:140px 0 70px;
+    text-align:center;
+}
+
+.shop-hero h1{
+    font-size:56px;
+    font-weight:800;
+    margin-bottom:18px;
+    color:#fff;
+}
+
+.shop-hero p{
+    max-width:700px;
+    margin:auto;
+    color:var(--gray);
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* =========================================
+   Toolbar
+   ========================================= */
+
+.shop-toolbar{
+    padding:20px 0 60px;
+}
+
+.toolbar{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.toolbar input,
+.toolbar select{
+
+    width:290px;
+
+    height:56px;
+
+    padding:0 20px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:16px;
+
+    background:var(--surface);
+
+    color:white;
+
+    font-size:15px;
+
+    transition:.3s;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.toolbar input:focus,
+.toolbar select:focus{
+
+    border-color:var(--gold);
+
+    box-shadow:0 0 0 4px rgba(212,175,55,.15);
+
+}
+
+/* =========================================
+   Products Grid
+   ========================================= */
+
+.shop-grid{
+
+    padding:20px 0 90px;
+
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:30px;
+}
+
+.products .card{
+    width:100%;
+}
+/* =========================================
+   Product Card
+   ========================================= */
+
+.card{
+
+    position:relative;
+
+    background:var(--surface);
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,.06);
+
+    box-shadow:var(--shadow);
+
+    transition:.35s ease;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--gold);
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.35);
+
+}
+
+.card img{
+
+    width:100%;
+
+    height:240px;
+
+    object-fit:contain;
+
+    background:white;
+
+    padding:28px;
+
+    display:block;
+
+}
+
+/* =========================================
+   Badge
+   ========================================= */
+
+.product-badge{
+    position:absolute;
+    top:16px;
+    left:16px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:8px 16px;
+
+    background:linear-gradient(135deg,#FFE55C,#D4AF37);
+
+    color:#111;
+
+    font-size:12px;
+    font-weight:700;
+
+    border-radius:999px;
+
+    text-transform:uppercase;
+
+    z-index:100;
+}
+
+/* =========================================
+   Card Content
+   ========================================= */
+
+.card-content{
+
+    padding:24px;
+
+}
+
+.card-content h3{
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:white;
+
+    margin-bottom:12px;
+
+    line-height:1.3;
+
+}
+
+.price{
+
+    color:var(--gold);
+
+    font-size:22px;
+
+    font-weight:700;
+
+    margin-bottom:22px;
+
+}
+
+/* =========================================
+   Button
+   ========================================= */
+
+.card-btn{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    width:85%;
+
+    height:52px;
+
+    margin:25px auto 0;
+
+    border-radius:999px;
+
+    text-decoration:none;
+
+    font-weight:700;
+}
+
+.card-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 15px 35px rgba(212,175,55,.35);
+
+}
+/* =========================================
+   Related Products
+   ========================================= */
+
+.related-products{
+
+    padding:90px 0;
+
+}
+
+.related-products h2{
+
+    text-align:center;
+
+    font-size:42px;
+
+    font-weight:800;
+
+    color:white;
+
+    margin-bottom:50px;
+
+}
+
+/* =========================================
+   Smooth Animations
+   ========================================= */
+
+.card,
+.card img,
+.card-btn{
+
+    transition:.35s ease;
+
+}
+
+.card:hover img{
+
+    transform:scale(1.05);
+
+}
+
+/* =========================================
+   Mobile
+   ========================================= */
+
+@media (max-width:768px){
+
+    .shop-hero{
+
+        padding:120px 0 50px;
+
+    }
+
+    .shop-hero h1{
+
+        font-size:40px;
+
+    }
+
+    .shop-hero p{
+
+        font-size:16px;
+
+        padding:0 15px;
+
+    }
+
+    .toolbar{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .toolbar input,
+    .toolbar select{
+
+        width:100%;
+
+        max-width:400px;
+
+    }
+
+    .products{
+
+        grid-template-columns:1fr;
+
+        gap:25px;
+
+    }
+
+    .card img{
+
+        height:220px;
+
+        padding:22px;
+
+    }
+
+    .card-content{
+
+        padding:20px;
+
+    }
+
+    .card-content h3{
+
+        font-size:22px;
+
+    }
+
+    .price{
+
+        font-size:20px;
+
+    }
+
+    .related-products{
+
+        padding:70px 0;
+
+    }
+
+    .related-products h2{
+
+        font-size:34px;
+
+        margin-bottom:35px;
+
+    }
+
+}
+
+/* =========================================
+   Large Screens
+   ========================================= */
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.products .card{
+    width:100%;
+}

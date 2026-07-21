@@ -3,14 +3,15 @@
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Shop | COVERIFY</title>
+    <title>Shop | COVERIFY</title>
 
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/shop.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 </head>
 
@@ -18,66 +19,86 @@
 
 <header class="navbar">
 
-<div class="logo">COVERIFY</div>
+    <a href="index.html" class="logo">
+        COVERIFY
+    </a>
 
-<nav>
+    <nav>
 
-<a href="index.html">Home</a>
+        <a href="index.html">Home</a>
 
-<a href="shop.html">Shop</a>
+        <a href="shop.html">Shop</a>
 
-<a href="cart.html">
-🛒 <span id="cart-count">0</span>
-</a>
+        <a href="cart.html">
+            🛒 <span id="cart-count">0</span>
+        </a>
 
-</nav>
+    </nav>
 
 </header>
 
-<section class="featured">
+<section class="shop-hero">
 
-<h2>Our Collection</h2>
+    <div class="container">
 
-<div class="shop-tools">
+        <h1>Premium Collection</h1>
 
-<input
-type="text"
-id="search"
-placeholder="Search cases...">
+        <p>
+            Discover premium iPhone cases designed for luxury,
+            elegance and everyday protection.
+        </p>
 
-<div class="filters">
+    </div>
 
-<button class="filter-btn active">All</button>
+</section>
 
-<button class="filter-btn">Silicone</button>
+<section class="shop-toolbar">
 
-<button class="filter-btn">Heritage</button>
+    <div class="container toolbar">
 
-<button class="filter-btn">Premium Cases</button>
+        <input
+            id="search"
+            type="text"
+            placeholder="Search products..."
+        >
 
-<button class="filter-btn">Accessories</button>
+        <select id="sort">
 
-</div>
+            <option value="default">Sort By</option>
+            <option value="low">Price: Low → High</option>
+            <option value="high">Price: High → Low</option>
 
-</div>
+        </select>
 
-<div class="products" id="products">
+    </div>
 
-</div>
+</section>
+
+<section class="shop-grid">
+
+    <div class="container">
+
+        <div id="products" class="products"></div>
+
+    </div>
 
 </section>
 
 <footer>
 
-<h3>COVERIFY</h3>
+    <h2>COVERIFY</h2>
 
-<p>Luxury iPhone Cases</p>
+    <p>Luxury iPhone Cases</p>
+
+    <p>© 2026 COVERIFY</p>
 
 </footer>
 
-<script src="products.js"></script>
-<script src="cart.js"></script>
-<script src="script.js"></script>
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/shop.js"></script>
+<script src="js/animations.js"></script>
+
 </body>
 
 </html>

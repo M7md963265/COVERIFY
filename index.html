@@ -2,29 +2,33 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>COVERIFY | Premium iPhone Cases</title>
+    <title>COVERIFY | Premium iPhone Cases</title>
 
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/shop.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <header class="navbar">
 
-    <a href="index.html" class="logo">COVERIFY</a>
+    <a href="index.html" class="logo">
+        COVERIFY
+    </a>
 
     <nav>
 
-        <a href="index.html" class="active">Home</a>
+        <a href="index.html">Home</a>
+
         <a href="shop.html">Shop</a>
-        <a href="shop.html">Premium</a>
-        <a href="cart.html" class="cart-link">
+
+        <a href="cart.html">
             🛒 <span id="cart-count">0</span>
         </a>
 
@@ -32,12 +36,12 @@
 
 </header>
 
-<section class="hero">
+<section class="hero reveal">
 
-    <div class="hero-text">
+    <div class="hero-content">
 
         <span class="hero-tag">
-            Luxury Collection
+            LUXURY COLLECTION
         </span>
 
         <h1>
@@ -46,208 +50,167 @@
         </h1>
 
         <p>
-
-            Discover premium iPhone cases crafted with elegance,
-            durability and precision. Designed to protect your device
-            while elevating your everyday style.
-
+            Premium iPhone cases crafted with elegance,
+            precision and everyday durability.
         </p>
 
-        <div class="hero-buttons">
+        <a href="shop.html" class="btn">
 
-            <a href="shop.html" class="btn">
-                Shop Collection →
+            Shop Collection →
+
+        </a>
+
+    </div>
+
+</section>
+
+<section class="collections reveal">
+
+    <div class="container">
+
+        <h2>Explore Collections</h2>
+
+        <div class="collection-grid">
+
+            <a href="shop.html" class="collection-card">
+
+                <img src="images/IMG_9384.PNG">
+
+                <div>
+
+                    <h3>Silicone</h3>
+
+                    <p>Soft Touch Collection</p>
+
+                </div>
+
+            </a>
+
+            <a href="shop.html" class="collection-card">
+
+                <img src="images/IMG_9403.PNG">
+
+                <div>
+
+                    <h3>Heritage</h3>
+
+                    <p>Inspired by Qatar</p>
+
+                </div>
+
+            </a>
+
+            <a href="shop.html" class="collection-card">
+
+                <img src="images/falcon-prestige.jpg">
+
+                <div>
+
+                    <h3>Premium</h3>
+
+                    <p>Luxury Craftsmanship</p>
+
+                </div>
+
             </a>
 
         </div>
 
     </div>
 
-
 </section>
 
-<section class="quote">
-    <p>
-        Luxury isn't loud.<br>
-        <span>It's in the details.</span>
-    </p>
-</section>
+<section class="featured reveal">
 
-<section class="collections">
+    <div class="container">
 
-    <h2>Explore Collections</h2>
+        <h2>Best Sellers</h2>
 
-    <div class="collection-grid">
+        <div id="featured-products" class="products">
 
-        <a href="shop.html" class="collection-card">
-
-            <img src="images/IMG_9384.PNG">
-
-            <div>
-
-                <h3>Silicone</h3>
-
-                <p>Minimal. Soft. Everyday.</p>
-
-            </div>
-
-        </a>
-
-        <a href="shop.html" class="collection-card">
-
-            <img src="images/IMG_9403.PNG">
-
-            <div>
-
-                <h3>Heritage</h3>
-
-                <p>Inspired by Qatar.</p>
-
-            </div>
-
-        </a>
-
-        <a href="shop.html" class="collection-card">
-
-            <img src="images/falcon-prestige.jpg">
-
-            <div>
-
-                <h3>Premium</h3>
-
-                <p>Luxury craftsmanship.</p>
-
-            </div>
-
-        </a>
-
-        <a href="shop.html" class="collection-card">
-
-            <img src="images/airpods-pro2.jpg">
-
-            <div>
-
-                <h3>Accessories</h3>
-
-                <p>Complete your setup.</p>
-
-            </div>
-
-        </a>
-
-    </div>
-
-</section>
-
-<section class="featured">
-
-<h2>Best Sellers</h2>
-
-<div class="products">
-
-<div class="card">
-
-<img src="images/techwoven-black.jpg">
-
-<h3>TechWoven Black</h3>
-
-<p>50 QAR</p>
-
-<a href="product.html?id=techwoven-black" class="card-btn">
-View Product
-</a>
-
-</div>
-
-<div class="card">
-
-<img src="images/falcon-prestige.jpg">
-
-<h3>Falcon Prestige</h3>
-
-<p>30 QAR</p>
-
-<a href="product.html?id=falcon-prestige" class="card-btn">
-View Product
-</a>
-
-</div>
-
-<div class="card">
-
-<img src="images/airpods-pro2.jpg">
-
-<h3>AirPods Pro 2</h3>
-
-<p>89 QAR</p>
-
-<a href="product.html?id=airpods-pro2" class="card-btn">
-View Product
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="benefits">
-
-    <h2>Crafted to Stand Out</h2>
-
-    <p class="section-subtitle">
-        Every detail is carefully designed to combine luxury aesthetics
-        with everyday protection.
-    </p>
-
-    <div class="benefit-grid">
-
-        <div class="benefit">
-            <h3>Premium Materials</h3>
-            <p>
-                Soft-touch finishes inspired by luxury craftsmanship.
-            </p>
-        </div>
-
-        <div class="benefit">
-            <h3>Precision Fit</h3>
-            <p>
-                Engineered specifically for your iPhone model.
-            </p>
-        </div>
-
-        <div class="benefit">
-            <h3>Fast Delivery</h3>
-            <p>
-                Quick delivery across Qatar with secure packaging.
-            </p>
-        </div>
-
-        <div class="benefit">
-            <h3>WhatsApp Ordering</h3>
-            <p>
-                Simple, fast and personalized customer service.
-            </p>
         </div>
 
     </div>
 
 </section>
+
+<section class="benefits reveal">
+
+    <div class="container">
+
+        <h2>Why COVERIFY?</h2>
+
+        <p class="section-subtitle">
+
+            Premium quality cases designed for style,
+            comfort and everyday protection.
+
+        </p>
+
+        <div class="benefit-grid">
+
+            <div class="benefit">
+
+                <div class="benefit-icon">✦</div>
+
+                <h3>Premium Materials</h3>
+
+                <p>Luxury finishes with superior protection.</p>
+
+            </div>
+
+            <div class="benefit">
+
+                <div class="benefit-icon">🛡</div>
+
+                <h3>Precision Fit</h3>
+
+                <p>Designed specifically for every iPhone.</p>
+
+            </div>
+
+            <div class="benefit">
+
+                <div class="benefit-icon">🚚</div>
+
+                <h3>Fast Delivery</h3>
+
+                <p>Quick delivery across Qatar.</p>
+
+            </div>
+
+            <div class="benefit">
+
+                <div class="benefit-icon">💬</div>
+
+                <h3>WhatsApp Support</h3>
+
+                <p>Friendly support whenever you need us.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
 <footer>
 
-<h2>COVERIFY</h2>
+    <h3>COVERIFY</h3>
 
-<p>Luxury iPhone Cases & Accessories</p>
+    <p>Luxury iPhone Cases & Accessories</p>
 
-<p>Designed with elegance. Built for protection.</p>
+    <p>Designed with elegance. Built for protection.</p>
 
-<p>© 2026 COVERIFY. All rights reserved.</p>
+    <p>© 2026 COVERIFY. All rights reserved.</p>
 
 </footer>
 
-<script src="products.js"></script>
-<script src="cart.js"></script>
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/home.js"></script>
+<script src="js/animations.js"></script>
 
 </body>
-
 </html>

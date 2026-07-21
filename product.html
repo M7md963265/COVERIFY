@@ -8,7 +8,9 @@
 
 <title>Product | COVERIFY</title>
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/product.css">
+<link rel="stylesheet" href="css/shop.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -34,57 +36,116 @@
 
 <section class="product-page">
 
-<div class="product-container">
+<div class="product-container reveal">
+    <div class="product-image">
 
-<div class="product-image">
-<img id="product-image" alt="Product Image">
-</div>
+    <div class="image-card">
 
-<div class="product-info">
+        <img id="product-image" alt="Product Image">
 
-<h1 id="product-name"></h1>
-
-<h2 id="product-price"></h2>
-
-<p id="product-description"></p>
-
-<div class="badges">
-<span>Premium Quality</span>
-<span>Shock Protection</span>
-<span>Fast Delivery</span>
-</div>
-
-<label for="phone-model">Choose your iPhone model</label>
-
-<select id="phone-model">
-</select>
-
-<label>Quantity</label>
-
-<div class="quantity">
-
-<button type="button" onclick="changeQty(-1)">−</button>
-
-<input id="qty" type="text" value="1" readonly>
-
-<button type="button" onclick="changeQty(1)">+</button>
+    </div>
 
 </div>
+    <div class="product-info">
 
-<button id="addCart" class="btn">
-Add To Cart
+        <span class="product-category">
+            Premium Collection
+        </span>
+
+        <h1 id="product-name"></h1>
+
+        <div class="rating">
+
+            ★★★★★
+
+            <span>4.9 (128 Reviews)</span>
+
+        </div>
+
+        <h2 id="product-price"></h2>
+
+        <p id="product-description"></p>
+
+        <div class="feature-list">
+
+    <div class="feature">
+        <span>🛡️</span>
+        <p>Premium Materials</p>
+    </div>
+
+    <div class="feature">
+        <span>📷</span>
+        <p>Raised Camera Protection</p>
+    </div>
+
+    <div class="feature">
+        <span>📱</span>
+        <p>Precision Fit</p>
+    </div>
+
+    <div class="feature">
+        <span>🚚</span>
+        <p>Fast Delivery in Qatar</p>
+    </div>
+
+</div>
+
+        <div class="purchase-box">
+
+            <label for="phone-model">
+
+                Choose your iPhone
+
+            </label>
+
+            <select id="phone-model"></select>
+
+            <label>
+
+                Quantity
+
+            </label>
+
+            <div class="quantity">
+
+                <button onclick="changeQty(-1)">−</button>
+
+                <input id="qty" value="1" readonly>
+
+                <button onclick="changeQty(1)">+</button>
+
+            </div>
+
+           <button id="addCart" class="btn">
+    Add to Cart
 </button>
 
-</div>
+<a href="cart.html" id="goCart" class="btn go-cart-btn" style="display:none;">
+    🛒 Go to Cart
+</a>
+
+
+        </div>
+
+    </div>
 
 </div>
 
 </section>
+<section class="related-products">
 
-<script src="products.js"></script>
-<script src="cart.js"></script>
-<script src="script.js"></script>
+    <div class="container">
 
+        <h2>You May Also Like</h2>
+
+        <div id="related-grid" class="products"></div>
+
+    </div>
+
+</section>
+<script src="js/products.js"></script>
+<script src="js/product.js"></script>
+<script src="js/animations.js"></script>
 </body>
 
 </html>
