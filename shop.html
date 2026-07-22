@@ -17,6 +17,10 @@
 
 <body>
 
+<!-- ===========================
+     NAVBAR
+=========================== -->
+
 <header class="navbar">
 
     <a href="index.html" class="logo">
@@ -27,15 +31,19 @@
 
         <a href="index.html">Home</a>
 
-        <a href="shop.html">Shop</a>
+        <a href="shop.html" class="active">Shop</a>
 
         <a href="cart.html">
-            🛒 <span id="cart-count">0</span>
+            🛒 <span id="cart-count">0 Items</span>
         </a>
 
     </nav>
 
 </header>
+
+<!-- ===========================
+     HERO
+=========================== -->
 
 <section class="shop-hero">
 
@@ -51,6 +59,10 @@
     </div>
 
 </section>
+
+<!-- ===========================
+     SEARCH & SORT
+=========================== -->
 
 <section class="shop-toolbar">
 
@@ -74,6 +86,42 @@
 
 </section>
 
+<!-- ===========================
+     FILTERS
+=========================== -->
+
+<section class="shop-filters">
+
+    <div class="container">
+
+        <div class="filters">
+
+            <button class="filter-btn active" data-filter="all">All</button>
+
+            <button class="filter-btn" data-filter="case">Cases</button>
+
+            <button class="filter-btn" data-filter="accessories">Accessories</button>
+
+            <button class="filter-btn" data-filter="silicone">Silicone</button>
+
+            <button class="filter-btn" data-filter="heritage">Heritage</button>
+
+            <button class="filter-btn" data-filter="suede">Suede</button>
+
+            <button class="filter-btn" data-filter="techwoven">TechWoven</button>
+
+             <button class="filter-btn" data-filter="graphic">Graphic</button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+     PRODUCTS
+=========================== -->
+
 <section class="shop-grid">
 
     <div class="container">
@@ -84,6 +132,10 @@
 
 </section>
 
+<!-- ===========================
+     FOOTER
+=========================== -->
+
 <footer>
 
     <h2>COVERIFY</h2>
@@ -93,6 +145,10 @@
     <p>© 2026 COVERIFY</p>
 
 </footer>
+
+<!-- ===========================
+     SCRIPTS
+=========================== -->
 
 <script src="js/products.js"></script>
 <script src="js/cart.js"></script>
